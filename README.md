@@ -90,6 +90,6 @@ docker pull <dockerhub_username>/<image_name>
 ### Step 11: Create a Container from the Pulled Image
 Create a container from the pulled image:
 ```bash
-docker run -it --name <container_name> <image_name> /bin/bash
+docker run -it --name <container_name> <image_name>
 ```
 Replace `<container_name>` with the name you want to give the container and `<image_name>` with the name of the image you pulled.
