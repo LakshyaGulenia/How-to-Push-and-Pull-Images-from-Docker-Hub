@@ -93,3 +93,29 @@ Create a container from the pulled image:
 docker run -it --name <container_name> <image_name>
 ```
 Replace `<container_name>` with the name you want to give the container and `<image_name>` with the name of the image you pulled.
+
+# 🐳 Docker Environment Variables (ENV) - Explained Simply
+
+## 📌 What Are Docker Environment Variables?
+
+In simple terms, **Docker environment variables** are settings you pass into a container when it starts. They allow you to **configure the behavior of your app** without changing the code.
+
+---
+
+## 🎯 Why Use Environment Variables?
+
+- Set app modes (e.g., `development`, `production`)
+- Configure ports
+- Pass in secrets like passwords (safely, without hardcoding)
+- Customize container behavior for different environments
+
+---
+
+## 🔧 How to Use Docker ENV
+
+### ✅ 1. With `docker run`
+
+You can pass variables directly:
+```bash
+docker run -e APP_ENV=production -e PORT=8080 myapp
+
